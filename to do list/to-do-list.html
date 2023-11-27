@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+
+    
+    <script>
+        function add_list(){
+            let item = document.getElementById("list");
+            let list_item = document.getElementById("list_item");
+            if(item.value != ""){
+                let make_li=document.createElement("li");
+                 make_li.appendChild(document.createTextNode(item.value));
+                 list_item.appendChild(make_li);
+                 item.value=""
+                 make_li.onclick = function(){
+              this.parentNode.removeChild(this);
+                     }
+                }
+                else{
+                    alert("please enter value on to-do-list");
+                }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <h1>TO-DO-LIST</h1>
+    </div>
+        <br></br>
+        <div class="row">
+            <form>
+                <div class="input">
+                <input type="text" placeholder="to-do-list" id="list" style="width: 30vw;">
+                <br></br>
+                </div>
+                <div class="addBtn">
+                <input type="button" value="add-items" onclick="add_list()">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="row">
+        <ul id="list_item">
+
+        </ul>
+
+    </div> 
+</body>
+</html>

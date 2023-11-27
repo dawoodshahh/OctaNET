@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    color: black;
+    font-weight: 500;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-image: url(c4.jpg);
+  
+}
+ img.card-pic{
+    box-shadow: 0px 4px 8px rgba(0, 0,0,0.2);
+    height: auto;
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+}
+.pics{
+    width: 300px;
+
+}
+.card-pic:nth-child(1){
+    left: 18%;
+    top: 30%;
+}
+.card-pic:nth-child(2){
+    left: 30%;
+    top: 40%;
+}
+.card-pic:nth-child(3){
+    left: 20%;
+    top: 50%;
+}
+.card-pic:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index:10;
+    cursor: pointer;
+}
+.promo{
+    width: 32%;
+    margin-left: 36%;
+    margin-top: 330px;
+   
+}
+.promo p{
+    font-size: 18px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: -158px;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.fa-facebook{
+   color: rgb(124, 124, 230);
+}
+.fa-twitter{
+   color: aqua;
+}
+.fa-instagram{
+    color : #f33953 ;
+}
